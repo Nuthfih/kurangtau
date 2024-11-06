@@ -1,3 +1,3 @@
-# Welcome to BarDates (Barudak Updates)
+# Welcome to Pronlen
 
-Disini kami memaparkan berita seputar Bandung
+Pronlen (Programmer Online) adalah sebuah aplikasi untuk para programmer freelancer membuat program untuk client
