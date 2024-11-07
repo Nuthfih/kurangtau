@@ -11,6 +11,21 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: limegreen;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgba( 0, 0, 0, 0.6);
+  width: 50px;
+}
+
+/* Index CSS */
+
 .logo{
     font-size: 25px;
     color: white;
@@ -25,7 +40,7 @@ html{
     transform: scale(1.1);
   }
 
-  span{
+.indexspan{
     color: limegreen;
   }
 
@@ -41,7 +56,7 @@ html{
     z-index: 100;
 }
 
-nav a{
+.indexnav a{
     font-size: 18px;
     color: white;
     font-weight: 500;
@@ -50,8 +65,8 @@ nav a{
     transition: 0.3s ease;
   }
 
-  nav a:hover,
-  nav a.active{
+  .indexnav a:hover,
+  .indexnav a.active{
     color: limegreen;
     border-bottom: 3px solid limegreen;
   }
@@ -71,4 +86,81 @@ nav a{
     color: white;
     background-color: limegreen;
     box-shadow: 0 0 25px limegreen;
+  }
+
+  .home {
+    margin: 0;
+      height: 100vh;
+      background-image: url('https://cdn.discordapp.com/attachments/1195371183382745211/1303970311770996776/photo-1461749280684-dccba630e2f6.png?ex=672db07c&is=672c5efc&hm=b526225455f4d63930b7970a40405aab5ce038a936caf743627e652111c90083&');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      position: relative;
+      overflow: hidden;
+  }
+
+.home::before {
+  content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+}
+
+.hometext{
+  position: relative;
+  z-index: 2;
+}
+
+.hometext h1{
+  font-size: 50px;
+}
+
+  .indexfooter {
+    position: relative;
+    bottom: 0;
+    width: 100;
+    padding: 40px 0;
+    background-color: black;
+  }
+
+  .indexfooter .indexsocial{
+      text-align: center;
+      padding-bottom: 25px;
+      color: white;
+  }
+
+  .indexfooter .indexsocial a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid aqua;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px aqua, 0 0 10px aqua;
+    transition: 0.3s ease;
+  }
+
+  .indexfooter .indexsocial a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: aqua;
+    border: 2px solid aqua;
+  }
+  
+  .indexfooter .indexcopyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
   }
