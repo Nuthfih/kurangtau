@@ -29,7 +29,7 @@ html{
     color: limegreen;
   }
 
-header{
+.indexheader{
     position: fixed;
     width: 100%;
     padding: 35px 10%;
@@ -56,7 +56,7 @@ nav a{
     border-bottom: 3px solid limegreen;
   }
 
-  .contact{
+  .login{
     padding: 10px 28px;
     background-color: white;
     color: black;
@@ -67,7 +67,7 @@ nav a{
     transition: 0.3s ease;
   }
 
-  .contact:hover{
+  .login:hover{
     color: white;
     background-color: limegreen;
     box-shadow: 0 0 25px limegreen;
