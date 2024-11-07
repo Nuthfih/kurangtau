@@ -71,7 +71,7 @@ html{
     border-bottom: 3px solid limegreen;
   }
 
-  .login{
+  .loginindex{
     padding: 10px 28px;
     background-color: white;
     color: black;
@@ -82,7 +82,7 @@ html{
     transition: 0.3s ease;
   }
 
-  .login:hover{
+  .loginindex:hover{
     color: white;
     background-color: limegreen;
     box-shadow: 0 0 25px limegreen;
@@ -164,3 +164,71 @@ html{
     font-size: 18px;
     color: white;
   }
+
+  /* Login CSS */
+
+
+.loginheader h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;    
+}
+
+.loginheader p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #737373;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    font-style: normal;
+    font-weight: 400;
+    font size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 20px;
+   
+}
+
+.login-form input {
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+ .login-form a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #737373;
+    margin: 20px 0;
+    display: block;
+ }
+
+.login-form .signin {
+    width: 100%;
+    height: 42px;
+    background: #000000;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.login-form span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #737373;
+}
+
+.login-form span a {
+    font-weight: 600;
+}
