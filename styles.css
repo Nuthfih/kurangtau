@@ -237,6 +237,11 @@ html{
     border-radius: 8px;
     color: #FFFFFF;
     border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .login-form span {
