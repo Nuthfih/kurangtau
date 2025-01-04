@@ -1,3 +1,3 @@
-# Welcome to Pronlen
+# Selamat Datang Di Pronlen
 
-Pronlen (Programmer Online) adalah sebuah aplikasi untuk para programmer freelancer membuat program untuk client
+Pronlen adalah web untuk programmer freelancer bekerja
