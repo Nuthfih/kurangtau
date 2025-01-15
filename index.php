@@ -49,7 +49,9 @@
 <section class="bg-center bg-no-repeat bg-[url('image/background.png')] bg-gray-700 bg-blend-multiply">
     <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Programmer Online (Pronlen)</h1>
-        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus cum neque repellat quidem deserunt nemo unde rem corrupti sapiente? Laborum veniam amet deleniti, obcaecati earum nihil dolore, sunt ipsam porro reiciendis quae exercitationem laudantium reprehenderit unde voluptatem corrupti blanditiis odit repudiandae! Ducimus expedita quos sapiente.</p>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Selamat datang di Pronlen, platform freelancer Programming Online yang dirancang untuk membantu kemampuan coding Anda! Mari mulai perjalanan Anda menuju menjadi programmer yang cuan! 
+Tekan tombol di bawah ini untuk melanjutkan.
+“Code your dreams, build the future with Pronlen!”</p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                 Get started
