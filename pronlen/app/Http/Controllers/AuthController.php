@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 class AuthController extends Controller
 {
     public function showLoginForm()
@@ -21,7 +22,7 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            return redirect()->intended('/'); 
+            return redirect()->intended('/dashboard'); 
         }
 
         return back()->withErrors([
@@ -32,7 +33,8 @@ class AuthController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect('/login');
+        Session::flush();
+        return redirect('/');
     }
 
     public function showRegistrationForm()
@@ -55,5 +57,11 @@ class AuthController extends Controller
         ]);
 
         return redirect('/login')->with('success', 'Registration successful! Please log in.');
+    }
+
+    public function dashboard()
+    {
+        $user = Auth::user(); 
+        return view('dashboard', compact('user'));
     }
 }
