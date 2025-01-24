@@ -30,7 +30,7 @@
             <div>
               <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
                 <span class="sr-only">Open user menu</span>
-                <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                <img class="w-8 h-8 rounded-full" src="https://raw.githubusercontent.com/Nuthfih/asset/refs/heads/main/blank-profile-picture-973460_1280.webp" alt="user photo">
               </button>
             </div>
             <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
@@ -113,15 +113,15 @@
    </div>
    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://github.com/Nuthfih/asset/blob/main/image_2025-01-24_074512896.png?raw=true" alt="">
+        <a href="#"><img class="h-auto max-w-full rounded-lg" src="https://github.com/Nuthfih/asset/blob/main/image_2025-01-24_074512896.png?raw=true" alt=""></a>
         <p class="px-2 text-xl font-bold">Website Development</p>
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://github.com/Nuthfih/asset/blob/main/20250124_090135.jpg?raw=true" alt="">
+        <a href="#"><img class="h-auto max-w-full rounded-lg" src="https://github.com/Nuthfih/asset/blob/main/20250124_090135.jpg?raw=true" alt=""></a>
         <p class="px-2 text-xl font-bold">Application Development</p>
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://github.com/Nuthfih/asset/blob/main/20250124_091903.jpg?raw=true" alt="">
+        <a href="#"><img class="h-auto max-w-full rounded-lg" src="https://github.com/Nuthfih/asset/blob/main/20250124_091903.jpg?raw=true" alt=""></a>
         <p class="px-2 text-xl font-bold">Game Development</p>
     </div>
    </div>

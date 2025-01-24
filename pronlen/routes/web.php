@@ -24,3 +24,6 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/dashboard', [AuthController::class, 'dashboard'])->middleware('auth');
+
+Route::get('/programmer', [AuthController::class, 'showProgrammerForm'])->name('programmer');
+Route::post('/programmer', [AuthController::class, 'programmer']);

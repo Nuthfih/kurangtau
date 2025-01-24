@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\ProgrammingLanguage;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 class AuthController extends Controller
@@ -59,6 +61,31 @@ class AuthController extends Controller
         return redirect('/login')->with('success', 'Registration successful! Please log in.');
     }
 
+    public function showProgrammerForm()
+    {
+        return view('auth.programmer');
+    }
+
+    public function programmer(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+            'languages' => 'required|array',
+        ]);
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'is_programmer' => true,
+        ]);
+
+        //$user->programmingLanguages()->attach($request->languages);
+
+        return redirect('/login')->with('success', 'Registration successful! Please log in.');
+    }
     public function dashboard()
     {
         $user = Auth::user(); 
