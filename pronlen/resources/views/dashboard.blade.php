@@ -111,27 +111,5 @@
       </ul>
    </div>
 </aside>
-
-<div class="p-4 sm:ml-64">
-   <div class="p-4 mt-14">   
-      <div class="flex items-center justify-center h-48 mb-4 rounded bg-[url('https://github.com/Nuthfih/asset/blob/main/20250124_064146.jpg?raw=true')] bg-gray-50 dark:bg-gray-800">
-            <p class="px-4 text-2xl text-white bottom-6 font-bold">Kamu mencari idenya, Programmer yang melakukannya.</p>
-      </div>
-   </div>
-   <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://github.com/Nuthfih/asset/blob/main/image_2025-01-24_074512896.png?raw=true" alt="">
-        <p class="px-2 text-xl font-bold">Website Development</p>
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://github.com/Nuthfih/asset/blob/main/20250124_090135.jpg?raw=true" alt="">
-        <p class="px-2 text-xl font-bold">Application Development</p>
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://github.com/Nuthfih/asset/blob/main/20250124_091903.jpg?raw=true" alt="">
-        <p class="px-2 text-xl font-bold">Game Development</p>
-    </div>
-   </div>
-</div>
 </body>
 </html>
