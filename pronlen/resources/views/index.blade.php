@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <link rel="shortcut icon" href="https://github.com/Nuthfih/asset/blob/main/logo.png?raw=true" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
