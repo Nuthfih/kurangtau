@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProgrammerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +27,6 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/dashboard', [AuthController::class, 'dashboard'])->middleware('auth');
 
 Route::get('/programmer', [AuthController::class, 'showProgrammerForm'])->name('programmer');
-Route::post('/programmer', [AuthController::class, 'programmer']);
+ Route::post('/programmer', [AuthController::class, 'programmer']);
+
+Route::resource('programmers', ProgrammerController::class);
