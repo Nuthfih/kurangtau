@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProgrammerController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,8 @@ Route::get('/programmer', [AuthController::class, 'showProgrammerForm'])->name('
  Route::post('/programmer', [AuthController::class, 'programmer']);
 
 Route::resource('programmers', ProgrammerController::class);
+
+
+Route::delete('/profile/{id}', [ProfileController::class, 'destroy'])->name('profile.delete');
+Route::put('/profile/{id}', [ProfileController::class, 'update'])->name('profile.update');
+Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

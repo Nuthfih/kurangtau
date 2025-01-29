@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\ProgrammingLanguage;
 
-
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
@@ -30,5 +29,6 @@ class Controller extends BaseController
 
     return response()->json(['message' => 'Languages attached successfully']);
 }
+
 
 }
