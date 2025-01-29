@@ -17,6 +17,7 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {return view('index');})->name('index');
+Route::get('/learnmore', function () {return view('learnmore');})->name('learnmore');
 
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);

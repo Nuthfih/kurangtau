@@ -22,7 +22,13 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            return redirect()->intended('/dashboard'); 
+           $user = Auth::user();
+
+           if ($user->is_programmer) {
+            return redirect()->intended('/programmers');
+           } else {
+            return redirect()->intended('/dashboard');
+           }
         }
 
         return back()->withErrors([
@@ -54,6 +60,7 @@ class AuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'is_programmer' => false,
         ]);
 
         return redirect('/login')->with('success', 'Registration successful! Please log in.');
